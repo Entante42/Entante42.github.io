@@ -1,11 +1,3 @@
-/* 
-
-Template 2090 Kinetic
-
-http://www.tooplate.com/view/2090-kinetic
-
-*/
-
 body {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -23,6 +15,7 @@ p {
 }
 
 html, body, section, .page {
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -40,6 +33,10 @@ section {
   width:400%;  
 }
 
+.link {
+  color:white;
+}
+
 .page {
   position: absolute;
 }
@@ -53,7 +50,7 @@ section {
 
 #p2 {
   left: 100%;
-  background-image: url(../img/about-bg.png);
+  background-image: url(../img/motive.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -66,6 +63,20 @@ section {
 }
 
 #p4 {
+  left: 300%;
+  background-image: url(../img/gallery-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#p5 {
+  left: 300%;
+  background-image: url(../img/gallery-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#p6 {
   left: 300%;
   background-image: url(../img/contact-bg.png);
   background-repeat: no-repeat;
@@ -88,15 +99,24 @@ ul {
 #t4:target .page#p4 {
     transform: translateX(-290%);
 }
+#t5:target .page#p5 {
+    transform: translateX(-290%);
+}
+#t6:target .page#p6 {
+    transform: translateX(-290%);
+}
+
 
 #t2:target ul, 
 #t3:target ul,
-#t4:target ul {
+#t4:target ul,
+#t5:target ul,
+#t6:target ul {
   background-color: rgba(48, 51, 60, 1);
 }
 
 .page#p1 {
-  -webkit-transition: all 0.5s ease-in-out; */
+  -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -104,7 +124,9 @@ ul {
 
 #t2:target .page#p1 .icon, 
 #t3:target .page#p1 .icon,
-#t4:target .page#p1 .icon {
+#t4:target .page#p1 .icon,
+#t5:target .page#p1 .icon,
+#t6:target .page#p1 .icon {
   -webkit-filter: blur(5px);
   filter: blur(5px);
 }
@@ -125,10 +147,13 @@ ul .icon:hover {
 
 #t2:target ul .icon,
 #t3:target ul .icon,
-#t4:target ul .icon {
+#t4:target ul .icon,
+#t5:target ul .icon,
+#t6:target ul .icon {
   transform: scale(1); 
   transition-delay: .1s;
 }
+
 
 #t2:target #dos {
 	color: #9f7f5f;
@@ -151,13 +176,27 @@ ul .icon:hover {
 	-webkit-transition: all 0.2s linear;
 }
 
+#t5:target #cinco {
+	color: #fff3c2;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+}
+
+#t6:target #seis {
+	color: #FFB7B2;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+    
+}
+
 ul {
-  padding-top: 20%;
+  padding-top: 10%;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  /*right: 0;*/
   margin: auto;
   height: auto;
   width: 10%;
@@ -201,19 +240,15 @@ a {
 
 .page#p1 .icon {
   margin-left: 10%;
-  	height: 400px;
+  	height: 350px;
 }
 
-.page#p2 .icon {
-  	height: 600px;
-}
-
-.page#p3 .icon {
-  	height: 700px;
-}
-
-.page#p4 .icon {
-  	height: 600px;
+.page#p2 .icon,
+.page#p3 .icon,
+.page#p4 .icon,
+.page#p5 .icon,
+.page#p6 .icon{
+  	height: 550px;
 }
 
 .page#p1 .icon {
@@ -232,16 +267,25 @@ a {
   transform: translateX(0) !important;
 }
 
+#t5:target .page#p5 .icon {
+  transform: translateX(0) !important;
+}
+
+#t6:target .page#p6 .icon {
+  transform: translateX(0) !important;
+}
+
 .credit {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	text-align: center;
-	font-size: 10px;
+	text-align: right;
+    padding-right: 10px;
+	font-size: 12px;
 	font-family: 'Montserrat', sans-serif;
 }
 
-.credit a {
+.credit {
 	color: #fff
 }
 
@@ -267,20 +311,33 @@ a {
 }
 
 
-#p1 .primary-button {
+#p1 h4, 
+#p2 h4, 
+#p3 h4, 
+#p4 h4, 
+#p5 h4, 
+#p6 h4 {
+    font-family: 'Montserrat', sans-seriff;
+}
+
+
+#p1 .primary-button,
+#p6 .primary-button{
 	display: block;
 	margin-top: -20px;
   padding-bottom: 60px;
 }
 
-#p1 span {
+#p1 span,
+#p6 span {
 	font-size: 15px;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
 }
 
-#p1 h4 {
+#p1 h4,
+#p6 h4{
 	letter-spacing: 1px;
 	font-size: 60px;
 	font-family: 'Montserrat', sans-serif;
@@ -288,16 +345,31 @@ a {
 	font-weight: 500;
 }
 
-#p1 p {
+#p1 p,
+#p2 p,
+#p3 p,
+#p4 p,
+#p5 p,
+#p6 p {
+	margin: 20px 30% 20px 30%;
+}
+
+#p6 p{
 	margin: 20px 30% 20px 30%;
 }
 
 
-#p2 .left-text {
+#p2 .left-text,
+#p3 .left-text,
+#p4 .left-text,
+#p5 .left-text {
 	text-align: left;
 }
 
-#p2 .primary-button {
+#p2 .primary-button,
+#p3 .primary-button,
+#p4 .primary-button,
+#p5 .primary-button {
   margin-bottom: 30px;
 }
 
@@ -318,7 +390,11 @@ a {
 	margin-bottom: 60px;
 }
 
-#p2 h4 {
+#p2 h4,
+#p3 h4,
+#p4 h4,
+#p5 h4,
+#p6 h4{
 	letter-spacing: 1px;
 	font-size: 48px;
 	font-family: 'Montserrat', sans-serif;
@@ -326,9 +402,9 @@ a {
 	margin-bottom: 30px;
 }
 
-
-
-#p3 .title {
+#p3 .title,
+#p4 .title,
+#p5 .title {
 	font-size: 15px;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -336,20 +412,26 @@ a {
 	margin-bottom: 60px;
 }
 
-#p3 .project-item {
+#p3 .project-item,
+#p4 .project-item,
+#p5 .project-item {
 	margin: 15px 0px;
 }
 
-#p3 .project-item img {
+#p3 .project-item img,
+#p4 .project-item img,
+#p5 .project-item img {
 	width: 100%;
 	overflow: hidden;
 }
 
-#p3 .last-project {
+#p3 .last-project,
+#p4 .last-project,
+#p5 .last-project {
   padding-bottom: 40px;
 }
 
-#p4 .title {
+#p6 .title {
 	font-size: 15px;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -357,81 +439,11 @@ a {
 	margin-bottom: 60px;
 }
 
-#p4 fieldset {
-	margin-top: -30px;	
-	margin-bottom: 15px;
+#p6 .center-text {
+	align-content: center;
 }
 
-#p4 input {
-	font-family: 'Montserrat', sans-serif;
-	padding-left: 15px;
-	max-width: 100%;
-	height: 40px;
-	display: inline-block;
-	line-height: 40px;
-	font-size: 13px;
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0.3);
-	border: none;
-	outline: none;
-	border-radius: 0;
-	box-shadow: none;
-}
-
-#p4 input:focus {
-  outline: none!important;
-  box-shadow: none;
-}
-
-#p4 textarea {
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 35px;
-  margin-bottom: 20px;
-  padding-left: 15px;
-  width: 100%;
-  max-width: 100%;
-  max-height: 180px;
-  height: 140px;
-  display: inline-block;
-  line-height: 40px;
-  font-size: 13px;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: none;
-  outline: none!important;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-#p4 textarea:focus {
-  	outline: none!important;
-  	box-shadow: none;
-}
-
-#p4 button {
-	font-family: 'Montserrat', sans-serif;
-  	display: inline-block;
-	padding: 15px 25px;
-	background-color: #63adcc;
-	color: #fff;
-	font-size: 11px;
-	text-transform: uppercase;
-	font-weight: 700;
-	left: 0.5px;
-	border-radius: 25px;
-	border: 1px solid transparent;
-}
-
-#p4 button:hover {
-	color: #fff;
-	background-color: transparent;
-	border: 1px solid #fff;
-	-moz-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-	-webkit-transition: all 0.2s linear;
-}
-
-#p4 .right-info {
+#p6 .right-info {
 	background-color: #fff;
 	padding: 30px;
 	color: #343434;
@@ -439,21 +451,21 @@ a {
   margin-bottom: 60px;
 }
 
-#p4 .right-info p em {
+#p6 .right-info p em {
 	font-style: normal;
 	font-weight: 500;
 }
 
-#p4 .right-info .social-icons {
+#p6 .right-info .social-icons {
   margin-top: 45px;
 }
 
-#p4 .right-info ol {
+#p6 .right-info ol {
   padding: 0;
   margin: 0;
 }
 
-#p4 .right-info i {
+#p6 .right-info i {
   margin-right: 10px;
   color: #fff;
   font-size: 15px;
@@ -466,7 +478,7 @@ a {
   line-height: 34px;
 }
 
-#p4 .right-info i:hover {
+#p6 .right-info i:hover {
   background-color: #63adcc;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -523,29 +535,29 @@ a {
 		margin-bottom: 40px;
 	}
 
-	.page#p3 .icon {
+	.page#p3 .page#p4 .page#p5 .icon {
 	  	height: auto;
 	  	padding: 80px 0px;
 	}
 
-	#p3 .last-project {
+	#p3 #p4 #p5 .last-project {
 		margin-bottom: 40px;
 	}
 
-	.page#p4 .icon {
+	.page#p6 .icon {
 	  	height: auto;
 	  	padding: 80px 0px;
 	}
 
-	#p4 .right-info {
+	#p6 .right-info {
 		margin-bottom: 60px;
 	}
 
-	#p4 .right-info i { 
+	#p6 .right-info i { 
 		margin-right: 0px;
 	}
 
-	#p4 .right-info {
+	#p6 .right-info {
 		padding: 20px;
 	}
 
@@ -561,10 +573,8 @@ a {
 	    background: #30333c;
 	}
 
-	.credit {
+	.credit p{
 		background-color: rgba(0, 0, 0, 0.5);
-		margin-bottom: 0px;
-		padding: 8px 0px;
 	}
 
 }
