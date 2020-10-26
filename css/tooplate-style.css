@@ -57,28 +57,28 @@ section {
 
 #p3 {
   left: 200%;
-  background-image: url(../img/gallery-bg.png);
+  background-image: url(../img/SF.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #p4 {
   left: 300%;
-  background-image: url(../img/gallery-bg.png);
+  background-image: url(../img/money.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #p5 {
   left: 300%;
-  background-image: url(../img/gallery-bg.png);
+  background-image: url(../img/how-it-works.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #p6 {
   left: 300%;
-  background-image: url(../img/contact-bg.png);
+  background-image: url(../img/about.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -177,7 +177,7 @@ ul .icon:hover {
 }
 
 #t5:target #cinco {
-	color: #fff3c2;
+	color: #fde396;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	-webkit-transition: all 0.2s linear;
